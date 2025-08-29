@@ -1,1 +1,56 @@
 
+/* Dark mode */
+    body.dark-mode {
+      background: #121212;
+      color: #ddd;
+     
+      
+    }
+    body.dark-mode .navbar,
+    body.dark-mode footer {
+      background: #1e1e1e;
+    }
+    body.dark-mode .card {
+      background: #2c2c2c;
+      color: #eee;
+    }
+    body.dark-mode .btn-custom {
+      background-color: #7daac6;
+      color: white;
+    }
+    body.dark-mode .btn-custom:hover {
+      background-color: #09c7d8af;
+    }
+/* FAQ Accordion */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.6rem;
+}
