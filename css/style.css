@@ -1,1 +1,30 @@
+body {
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+      background: linear-gradient(135deg,#0b3f73, #1353ac);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .navbar {
+      background: #0b3f73;
+    }
+    .navbar-brand, .nav-link {
+      color: rgb(255, 255, 255) !important;
+    }
+    .hero {
+
+     background-image: url("/project/image/image.jpg");
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: cover;
+     color:rgb(255, 255, 255); 
+     padding: 120px 15px;
+     text-align:center;     
+    }
+    .section-title {
+      color:white;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
 
