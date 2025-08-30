@@ -57,13 +57,46 @@
 
 
   <!-- Materials Section -->
-  <section></section> 
+  
+    <section class="container my-5" id="materials">
+    <h2 class="section-title ">Study Materials</h2>
+    <div id="materialList" class="row g-4"></div>
+  </section>
+   
 
   <!-- Notices Section -->
-  <section></section> 
+   <section class="container my-5" id="notices">
+    <h2 class="section-title ">Notices & Announcements</h2>
+    <ul id="noticeList" class="list-group"></ul>
+  </section>
+
 
   <!-- Exam Routine Section -->
-  <section></section> 
+ 
+  <section class="container my-5" id="routine">
+    <div class="text-center mb-4">
+      <h2 class=" section-title"> Exam Routine</h2>
+      <ul id="noticeList" class="list-group"></ul>
+    </div>
+
+    <!-- Search Bar --> 
+    <input type="text" id="searchCourse" class="form-control mb-3" placeholder="🔍 Search by courses,date,room.." />
+    <!-- Table -->
+    <div class="table-responsive shadow-lg rounded-3">
+      <table class="table table-hover table-bordered align-middle text-center mb-0">
+        <thead class="custom-thead table-primary">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Course</th>
+            <th scope="col">Time</th>
+            <th scope="col">Room</th>
+          </tr>
+        </thead>
+        <tbody id="routineList"></tbody>
+      </table>
+    </div>
+  </section>
+
 
   <!-- FAQ Section -->
   <section></section> 
