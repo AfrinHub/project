@@ -120,12 +120,12 @@ if (noticeList) {
 }
 
 // Render Routine
-const routineList = document.getElementById("routineList");
-if (routineList) {
+const routineTableBody = document.getElementById("routineTableBody");
+if (routineTableBody) {
   routine.forEach(r => {
     const tr = document.createElement("tr");
     tr.innerHTML = `<td>${r.date}</td><td>${r.course}</td><td>${r.time}</td><td>${r.room}</td>`;
-    routineList.appendChild(tr);
+    routineTableBody.appendChild(tr);
   });
 }
 

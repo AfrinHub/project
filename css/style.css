@@ -14,7 +14,8 @@ body {
 }
 
 .hero {
-  background-image: url("/project/image/image.jpg");
+  /* background-image: url("/project/image/image.jpg"); */
+  background-image: url("../image/image.jpg"); 
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -22,6 +23,13 @@ body {
   padding: 120px 15px;
   text-align: center;
 }
+
+.hero h1,
+.hero p {
+  color: white; 
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* subtle shadow for readability */
+}
+
 
 .section-title {
   color: white;
@@ -39,14 +47,21 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.btn-custom {
+ a.btn-custom {
   background-color: #0b3f73;
-  border: none;
+  border: 1px solid #0b3f73;
+  border-radius: 5px; 
   color: white;
-  transition: background-color 0.3s;
+  padding: 6px 12px; 
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
-.btn-custom:hover {
-  background-color: #8eafda;
+ a.btn-custom:hover {
+  background-color: #1353ac;
+  border-color: #1353ac;
+  color: white;
+  transform: translateY(-1px); 
+  cursor: pointer;
 }
 
 /* Dark mode */
