@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,34 +12,192 @@
     
 
   <!-- Navbar Section -->
-  <nav></nav>
+  <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Course Helper</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#materials">Materials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notices">Notices</a></li>
+          <li class="nav-item"><a class="nav-link" href="#routine">Routine</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-3">
+            <button class="btn btn-light btn-sm" id="darkModeToggle" title="Toggle Dark Mode">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <section></section>
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to Course Helper</h1>
+      <p class="lead  ">Your friendly academic companion at IIT, Jahangirnagar University.</p>
+      <a href="#courses" class="btn btn-lg btn-custom">Explore Courses</a>
+    </div>
+  </section>
+
 
   <!-- Courses Section -->
-  <section></section>
+  <section class="container my-5" id="courses">
+
+    <h2 class="section-title ">Courses</h2> 
+    <input type="text" id="searchCourse" class="form-control mb-3" placeholder="🔍 Search by courses" />
+    <ul id="courseList" class="list-group"></ul>
+  </section>
+
 
   <!-- Materials Section -->
-  <section></section> 
+  
+    <section class="container my-5" id="materials">
+    <h2 class="section-title ">Study Materials</h2>
+    <div id="materialList" class="row g-4"></div>
+  </section>
+   
 
   <!-- Notices Section -->
-  <section></section> 
+   <section class="container my-5" id="notices">
+    <h2 class="section-title ">Notices & Announcements</h2>
+    <ul id="noticeList" class="list-group"></ul>
+  </section>
+
 
   <!-- Exam Routine Section -->
-  <section></section> 
+ 
+  <section class="container my-5" id="routine">
+    <div class="text-center mb-4">
+      <h2 class=" section-title"> Exam Routine</h2>
+      <ul id="routineList" class="list-group"></ul>
+    </div>
+
+    <!-- Search Bar --> 
+    <input type="text" id="searchRoutine" class="form-control mb-3" placeholder="🔍 Search by courses,date,room.." />
+    <!-- Table -->
+    <div class="table-responsive shadow-lg rounded-3">
+      <table class="table table-hover table-bordered align-middle text-center mb-0">
+        <thead class="custom-thead table-primary">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Course</th>
+            <th scope="col">Time</th>
+            <th scope="col">Room</th>
+          </tr>
+        </thead>
+        <tbody id="routineTableBody"></tbody>
+      </table>
+    </div>
+  </section>
+
 
   <!-- FAQ Section -->
-  <section></section> 
+  <section class="container my-5" id="faq">
+    <h2 class="section-title ">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqOneHeader">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+            How to register for courses?
+          </button>
+        </h2>
+        <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeader" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Visit the registration portal on the university website and log in using your student credentials. Select your desired courses and submit.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqTwoHeader">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+            Where can I find study materials?
+          </button>
+        </h2>
+        <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeader" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Study materials are listed in the "Study Materials" section of this site. You can also ask your instructors for additional resources.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqThreeHeader">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+            How to contact the department office?
+          </button>
+        </h2>
+        <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeader" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Visit the Contact section below to find the department's email, phone number, and location.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Testimonials Section -->
-  <section></section> 
+  <section class="container my-5" id="testimonials">
+    <h2 class="section-title ">What Students Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" id="testimonialInner"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
   <!-- Contact Section -->
-  <section></section> 
+  <section class="container my-5" id="contact">
+    <h2 class="section-title ">Contact</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5>Department Office</h5>
+          <p>Email: <a href="mailto:iit@juniv.edu">iit@juniv.edu</a></p>
+          <p>Phone: +880-1720997623</p>
+          <p>Location: IIT Building, Jahangirnagar University</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <form class="p-4 border rounded bg-white" id="contactForm">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer Section -->
-  <footer></footer>
+  <footer>
+    <p>&copy; <span id="year"></span> Course Helper - IIT, Jahangirnagar University</p>
+  </footer>
+
+<!-- Scroll to top button -->
+<button id="scrollTopBtn" class="btn btn-custom" title="Go to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
 
   
   <script src="js/index.js"></script>

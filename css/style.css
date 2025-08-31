@@ -1,1 +1,123 @@
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg,#0b3f73, #1353ac);
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.navbar {
+  background: #0b3f73;
+}
+
+.navbar-brand, .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.hero {
+  /* background-image: url("/project/image/image.jpg"); */
+  background-image: url("../image/image.jpg"); 
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  padding: 120px 15px;
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  color: white; 
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* subtle shadow for readability */
+}
+
+
+.section-title {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+ a.btn-custom {
+  background-color: #0b3f73;
+  border: 1px solid #0b3f73;
+  border-radius: 5px; 
+  color: white;
+  padding: 6px 12px; 
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+ a.btn-custom:hover {
+  background-color: #1353ac;
+  border-color: #1353ac;
+  color: white;
+  transform: translateY(-1px); 
+  cursor: pointer;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #121212;
+  color: #ddd;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background: #1e1e1e;
+}
+
+body.dark-mode .card {
+  background: #2c2c2c;
+  color: #eee;
+}
+
+body.dark-mode .btn-custom {
+  background-color: #7daac6;
+  color: white;
+}
+body.dark-mode .btn-custom:hover {
+  background-color: #09c7d8af;
+}
+
+/* FAQ Accordion */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.6rem;
+}
